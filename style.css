@@ -1,0 +1,150 @@
+@import URL()'https://kit.fontawesome.com/0f29bf93fe.js');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #1B262C;
+}
+
+/* Обертка всей формы */
+
+.form__wrapper {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  border-radius: 20px;
+  background: #F6F6F6;
+  box-shadow: 0px 0px 6px #5b678a;
+  padding: 20px;
+}
+
+/* Инпут */
+
+.password__wrapper {
+  width: 70%;
+  padding: 15px;
+  border-radius: 6px;
+  background: #D6E4F0;
+  position: relative;
+}
+
+.password__input {
+  border: solid;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: inherit;
+  position: relative;
+  font-family: 'Merriweather', serif;
+}
+
+.password__input:focus {
+  border: red;
+}
+
+.password__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 10px;
+  border-radius: 50%;
+  background: #F6F6F6;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hide::before {
+  content: '\f06e';
+  font-family: fontAwesome;
+}
+
+.visible::before {
+  content: '\f070';
+  font-family: fontAwesome;
+}
+
+/* Обертка условий */
+
+.form__validation-wrapper {
+  border-radius: 6px;
+  background: #D6E4F0;
+  width: 70%;
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  justify-content: center;
+}
+
+/* Условия */
+
+.validation {
+  padding: 5px;
+  background: #303841;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  color: #D6E4F0;
+}
+
+.not-valid::before {
+  content: '\f192';
+  width: 20px;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: fontAwesome;
+}
+
+.valid {
+  opacity: 0.6;
+}
+
+.valid::before {
+  content: '\f00c';
+  width: 20px;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  color: #17B978;
+  justify-content: center;
+  align-items: center;
+  font-family: fontAwesome;
+}
+
+/* Кнопка */
+
+.form__btn {
+  width: 30%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 5px;
+  background: #D6E4F0;
+  cursor: pointer;
+  font-family: 'Merriweather', serif;
+}
