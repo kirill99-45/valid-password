@@ -51,10 +51,6 @@ body {
   font-family: 'Merriweather', serif;
 }
 
-.password__input:focus {
-  border: red;
-}
-
 .password__toggle {
   position: absolute;
   width: 24px;
